@@ -29,4 +29,6 @@ jobs:
     - name: docker
       run: |
         docker compose up
-
+    - name: test
+      run: |
+      print("hello")
