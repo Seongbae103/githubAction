@@ -32,3 +32,5 @@ jobs:
       - name: pip update
         run: |
           python -m pip install --upgrade pip
+      - name: Create annotation for build error
+        run: echo "::error file=app.js,line=1::Missing semicolon"
